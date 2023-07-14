@@ -104,7 +104,8 @@ public class ProfessorController
 	}
 	
 	@PostMapping("/addCourse")
-	@CrossOrigin(origins = "http://localhost:8080")
+	@CrossOrigin(origins = "http://localhost:4200")
+    
 	public Course addNewCourse(@RequestBody Course course) throws Exception
 	{
 		Course courseObj = null;
