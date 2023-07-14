@@ -25,7 +25,8 @@ public class RegistrationController
 	
 	@Autowired
 	private ProfessorService professorService;
-	 @CrossOrigin(origins = "http://localhost:8080")
+        
+	@CrossOrigin(origins = "http://localhost:4200")
 	@PostMapping("/registeruser")
 
 	public User registerUser(@RequestBody User user) throws Exception
