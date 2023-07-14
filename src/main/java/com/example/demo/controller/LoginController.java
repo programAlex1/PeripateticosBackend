@@ -52,8 +52,8 @@ public class LoginController
 		return userObj;
 	}
 	
-	@PostMapping("/loginprofessor")
-	@CrossOrigin(origins = "http://localhost:8080")
+	@CrossOrigin(origins = "http://localhost:4200")
+        @PostMapping("/loginprofessor")
 	public Professor loginDoctor(@RequestBody Professor professor) throws Exception
 	{
 		String currEmail = professor.getEmail();
