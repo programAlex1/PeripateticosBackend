@@ -48,8 +48,8 @@ public class RegistrationController
 		return userObj;
 	}
 	
-	@PostMapping("/registerprofessor")
-	@CrossOrigin(origins = "http://localhost:8080")
+	@CrossOrigin(origins = "http://localhost:4200")
+        @PostMapping("/registerprofessor")
 	public Professor registerDoctor(@RequestBody Professor professor) throws Exception
 	{
 		String currEmail = professor.getEmail();
