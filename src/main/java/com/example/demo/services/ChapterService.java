@@ -28,6 +28,11 @@ public class ChapterService {
 	{
 		return chapterRepo.save(chapter);
 	}
+    
+    public Chapter addNewChallenge(Chapter chapter)
+	{
+		return chapterRepo.save(chapter);
+	}
 	
 	public List<Chapter> getAllChapters()
 	{
@@ -38,4 +43,5 @@ public class ChapterService {
 	{
 		return (List<Chapter>)chapterRepo.findByCoursename(coursename);
 	}
+    
 }

@@ -34,7 +34,7 @@ public class LoginController
     }
 	
 	@PostMapping("/loginuser")
-	@CrossOrigin(origins = "http://localhost:8080")
+	@CrossOrigin(origins = "http://localhost:4200")
 	public User loginUser(@RequestBody User user) throws Exception
 	{
 		String currEmail = user.getEmail();
