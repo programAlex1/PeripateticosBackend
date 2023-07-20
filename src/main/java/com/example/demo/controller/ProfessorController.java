@@ -124,16 +124,7 @@ public class ProfessorController
 		chapterObj = chapterService.addNewChapter(chapter);
 		return chapterObj;
 	}
-    
-    @PostMapping("/addnewchallenge")
-	@CrossOrigin(origins = "http://localhost:4200")
-	public Chapter addNewChallenge(@RequestBody Chapter chapter) throws Exception
-	{
-		Chapter challengeObj = null;
-		challengeObj = chapterService.addNewChallenge(chapter);
-		return challengeObj;
-	}
-	
+
 	@GetMapping("/acceptstatus/{email}")
 	@CrossOrigin(origins = "http://localhost:4200")
 	public ResponseEntity<List<String>> updateStatus(@PathVariable String email) throws Exception
@@ -222,7 +213,7 @@ public class ProfessorController
 		}
 		return new ResponseEntity<List<String>>(coursenames, HttpStatus.OK);
 	}
-	
+
 	public String getNewID()
 	{
 		String AlphaNumericString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"+"0123456789"+"abcdefghijklmnopqrstuvxyz";
